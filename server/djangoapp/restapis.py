@@ -25,7 +25,7 @@ def get_request(endpoint, **kwargs):
         print("Network exception occured")
 
 def analyze_review_sentiments(text):
-    request_url = sentiment_analyzer_url+"analyze/"+text
+    request_url = sentiment_analyzer_url+"/analyze/"+text
     #Add code for retrieving sentiments
     try:
         response = requests.get(request_url)

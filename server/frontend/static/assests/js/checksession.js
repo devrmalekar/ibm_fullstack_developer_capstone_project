@@ -1,4 +1,5 @@
 const logout = async (e) => {
+  e.preventDefault();
 // Build logout URL and Make GET request to logout endpoint
   let logout_url = window.location.origin+"/djangoapp/logout";
   const res = await fetch(logout_url, {

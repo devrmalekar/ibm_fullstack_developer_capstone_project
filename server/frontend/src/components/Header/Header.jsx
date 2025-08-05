@@ -24,7 +24,14 @@ const Header = () => {
   };
     
 //The default home page items are the login details panel
-let home_page_items =  <div></div>
+const currentUrl = window.location.pathname + window.location.search;
+const encodedUrl = encodeURIComponent(currentUrl);
+
+let home_page_items = 
+    <div className="input_panel">
+            <a class="homepage_links" href={`/login?next=${encodedUrl}`}>Login</a>
+            <a class="homepage_links"  href="/register">Register</a>
+    </div>
 
 //Gets the username in the current session
 let curr_user = sessionStorage.getItem('username')
@@ -48,6 +55,9 @@ if ( curr_user !== null &&  curr_user !== "") {
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link active" style={{fontSize: "larger"}} aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style={{fontSize: "larger"}} href="/dealers">Dealers</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" style={{fontSize: "larger"}} href="/about">About Us</a>

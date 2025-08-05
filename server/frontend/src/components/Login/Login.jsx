@@ -9,6 +9,13 @@ const Login = ({ onClose }) => {
   const [password, setPassword] = useState("");
   const [open,setOpen] = useState(true)
 
+  // Get the `next` param from the query string
+  const searchParams = new URLSearchParams(window.location.search);
+  const nextUrl = searchParams.get('next') || '/';  // fallback to home
+  if (!nextUrl.startsWith('/')) {
+    nextUrl = '/';
+  }
+
   let login_url = window.location.origin+"/djangoapp/login";
 
   const login = async (e) => {
@@ -36,7 +43,7 @@ const Login = ({ onClose }) => {
 };
 
   if (!open) {
-    window.location.href = "/";
+    window.location.href = nextUrl;
   };
   
 
