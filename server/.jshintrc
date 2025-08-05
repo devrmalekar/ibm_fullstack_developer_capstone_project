@@ -1,0 +1,23 @@
+{
+  "esversion": 8,
+  "undef": true,
+  "globals": {
+    "data": true
+  },
+  "laxbreak": true,
+  "asi": true,
+  "evil": false,
+  "browser": true,
+  "devel": true,
+  "node": true,
+  "maxerr": 100,
+  "predef": [],
+  "maxparams": 5,
+  "maxdepth": 5,
+  "maxstatements": 25,
+  "maxcomplexity": 10,
+  "maxlen": 120,
+  "loopfunc": true,
+  "quotmark": false,
+  "sub": true         // ✅ disables the dot-notation warning (W069)
+}
