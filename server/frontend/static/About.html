@@ -1,59 +1,65 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/static/assests/css/style.css">
-    <link rel="stylesheet" href="/static/assests/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/assets/css/style.css">
+  <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+   <script src="/static/assets/js/checksession.js"></script>
 </head>
+<body onload="checkSession()">
+  {% include 'Navbar.html' with active=active %}
 
-<body>
-    {% include  'Navbar.html' %}
-
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-        <div class="banner" name="about-header">
-            <h1>About Us</h1>
-            Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported cars at reasonable prices.
-            Our experienced team is dedicated to helping you find the perfect vehicle to suit your needs and budget.
-            Whether you're looking for a reliable family car or a high-performance sports model, we’ve got something for everyone.
-        </div>
-        <div style="display: flex;flex-direction: row; margin:auto">
-            <div class="card" style="width: 30%;">
-                <img class="card-img-top" src="/static/assests/images/person.jpg" alt="Card image">
-                <div class="card-body">
-                    <p class="title">Rehman Malekar</p>
-                    <p>CEO</p>
-                    <p class="card-text">
-                        Rehman Malekar, the CEO of Best Cars, is a seasoned leader with over two decades of experience in the automotive industry. His vision and commitment to customer satisfaction have been key to the dealership’s continued success.
-                    </p>
-                    <p>ceo@bsdamericaibmfsd.com</p>
-                </div>
-            </div>
-
-            <div class="card" style="width: 30%;">
-                <img class="card-img-top" src="/static/assests/images/person.jpg" alt="Card image">
-                <div class="card-body">
-                    <p class="title">Ram Malekar</p>
-                    <p>Sales Manager</p>
-                    <p class="card-text">
-                        Ram is an accomplished sales manager with a proven track record of leading teams to exceed targets. He excels at building strong customer relationships and driving business growth through effective sales strategies.
-                    </p>
-                    <p>er@bsdamericaibmfsd.com</p>
-                </div>
-            </div>
-
-            <div class="card" style="width: 30%;">
-                <img class="card-img-top" src="/static/assests/images/person.jpg" alt="Card image">
-                <div class="card-body">
-                    <p class="title">Manijan Malekar</p>
-                    <p>Mechanics</p>
-                    <p class="card-text">
-                        Manijan is an experienced mechanic who specializes in diagnosing and repairing a wide range of vehicles. Known for his attention to detail and problem-solving skills, he ensures every car runs smoothly and safely.
-                    </p>
-                    <p>mechanics@bsdamericaibmfsd.com</p>
-                </div>
-            </div>
-        </div>
+  <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
+    <div class="banner" name="about-header">
+      <h1>About Us</h1>
+      Welcome to Best Cars dealership, home to the best cars in North America. We deal in sale of domestic and imported
+      cars at reasonable prices.
+      Our experienced team is dedicated to helping you find the perfect vehicle to suit your needs and budget.
+      Whether you're looking for a reliable family car or a high-performance sports model, we’ve got something for
+      everyone.
     </div>
+    <div style="display: flex;flex-direction: row; margin:auto">
+      <div class="card" style="width: 30%;">
+        <img class="card-img-top" src="/static/assests/images/person.jpg" alt="Card image">
+        <div class="card-body">
+          <p class="title">Rehman Malekar</p>
+          <p>CEO</p>
+          <p class="card-text">
+            Rehman Malekar, the CEO of Best Cars, is a seasoned leader with over two decades of experience in the
+            automotive industry. His vision and commitment to customer satisfaction have been key to the dealership’s
+            continued success.
+          </p>
+          <p>ceo@bsdamericaibmfsd.com</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 30%;">
+        <img class="card-img-top" src="/static/assests/images/person.jpg" alt="Card image">
+        <div class="card-body">
+          <p class="title">Ram Malekar</p>
+          <p>Sales Manager</p>
+          <p class="card-text">
+            Ram is an accomplished sales manager with a proven track record of leading teams to exceed targets. He
+            excels at building strong customer relationships and driving business growth through effective sales
+            strategies.
+          </p>
+          <p>er@bsdamericaibmfsd.com</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 30%;">
+        <img class="card-img-top" src="/static/assests/images/person.jpg" alt="Card image">
+        <div class="card-body">
+          <p class="title">Manijan Malekar</p>
+          <p>Mechanics</p>
+          <p class="card-text">
+            Manijan is an experienced mechanic who specializes in diagnosing and repairing a wide range of vehicles.
+            Known for his attention to detail and problem-solving skills, he ensures every car runs smoothly and safely.
+          </p>
+          <p>mechanics@bsdamericaibmfsd.com</p>
+        </div>
+      </div>
     </div>
+  </div>
 
 </body>
 

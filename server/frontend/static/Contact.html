@@ -1,44 +1,47 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/static/assests/css/style.css">
-    <link rel="stylesheet" href="/static/assests/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/assests/css/contact.css">
+  <link rel="stylesheet" href="/static/assets/css/style.css">
+  <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/assets/css/contact.css">
+   <script src="/static/assets/js/checksession.js"></script>
 </head>
 
 <body onload="checkSession()">
-    {% include 'Navbar.html' %}
-    <div style="display: flex;flex-direction: column;">
-        <div class="card " style="width: 50%;margin-top: 50px;align-self: center;">
-            <!-- Top Image -->
-            <img src="/static/assests/images/car_dealership.jpg" alt="Top Banner" class="top-image">
+ {% include 'Navbar.html' with active=active %}
+  <div style="display: flex;flex-direction: column;">
+    <div class="card " style="width: 50%;margin-top: 50px;align-self: center;">
+      <!-- Top Image -->
+      <img src="/static/assests/images/car_dealership.jpg" alt="Top Banner" class="top-image">
 
-            <!-- Card Content -->
-            <div class="card-content">
-                <!-- Left: Customer Support Image -->
-                <div class="left-side">
-                    <img src="/static/assests/images/support.png" alt="Support" class="support-image">
-                </div>
-
-
-                <!-- Divider -->
-                <div class="divider"></div>
-
-                <!-- Right: Contact Us Text -->
-                <div class="contact-details">
-                    <h3>Contact Customer Service</h3>
-                    <p> support@bsdamericaibmfsd.com</p>
-                    <h3>Contact our National Advertising Team </h3>
-                    <p> nationalsales@bsdamericaibmfsd.com</p>
-                    <h3>Contact our Public Relation Team</h3>
-                    <p> pr@bsdamericaibmfsd.com</p>
-                    <h3>Contact the bsdamericaibmfsd.com office</h3>
-                    <p> 101-011-1010</p>
-                    <h3>Become a bsdamericaibmfsd.com car dealer</h3>
-                    <p> visit growwithbsdamericaibmfsd.com</p>
-                </div>
-            </div>
+      <!-- Card Content -->
+      <div class="card-content">
+        <!-- Left: Customer Support Image -->
+        <div class="left-side">
+          <img src="/static/assests/images/support.png" alt="Support" class="support-image">
         </div>
-</body>
 
+
+        <!-- Divider -->
+        <div class="divider"></div>
+
+        <!-- Right: Contact Us Text -->
+        <div class="contact-details">
+          <h3>Contact Customer Service</h3>
+          <p> support@bsdamericaibmfsd.com</p>
+          <h3>Contact our National Advertising Team </h3>
+          <p> nationalsales@bsdamericaibmfsd.com</p>
+          <h3>Contact our Public Relation Team</h3>
+          <p> pr@bsdamericaibmfsd.com</p>
+          <h3>Contact the bsdamericaibmfsd.com office</h3>
+          <p> 101-011-1010</p>
+          <h3>Become a bsdamericaibmfsd.com car dealer</h3>
+          <p> visit growwithbsdamericaibmfsd.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
+
+
