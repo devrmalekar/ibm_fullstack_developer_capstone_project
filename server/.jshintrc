@@ -19,5 +19,5 @@
   "maxlen": 120,
   "loopfunc": true,
   "quotmark": false,
-  "sub": true         // ✅ disables the dot-notation warning (W069)
+  "sub": false         // ✅ disables the dot-notation warning (W069)
 }
