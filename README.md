@@ -30,7 +30,7 @@ This project adds user authentication and integrates multiple backend services t
 
 ## 🗂 Project Structure
 
-.
+<pre>```
 ├── server/ # Root Folder
 |   ├── database/ # Node.js Express Backend with MongoDB for dealers details and reviews 
     |   ├── data #sample data
@@ -118,8 +118,7 @@ This project adds user authentication and integrates multiple backend services t
   └── requirements.txt
   └── LICENSE
   └── README.md
-  
-
+```</pre>
 ---
 
 ## 🛠️ Technologies Used
