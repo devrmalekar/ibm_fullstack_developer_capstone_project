@@ -8,7 +8,7 @@ table{
   td{
     padding:10px;
     align-self: center;
-    border:solid grey .5px;
+    border:solid rgb(222, 52, 52) .5px;
     text-align: center;
     font-size: large;
   }
@@ -16,7 +16,7 @@ table{
   .review_panel{
     display: flex;
     flex-direction: column;
-    border: solid grey;
+    border: solid rgb(113, 35, 35);
     position: relative;
     height:7cm;
     width:6cm;
@@ -60,6 +60,7 @@ table{
     font-style: italic;
     color: gray;
     font-size: small;
+    text-align: center;
 }
 
 .review {
@@ -84,5 +85,5 @@ table{
 
 .review_icon:hover {
   transform: scale(1.1);
-  border: solid lightgray;
+  border: solid rgb(220, 34, 34);
 }
